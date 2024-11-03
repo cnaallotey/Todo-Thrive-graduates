@@ -46,5 +46,7 @@ function toggleTodo(id){
     rederTodos()
 }
 
+// delete todo
+
 addButton.addEventListener('click', addTodo)
 
