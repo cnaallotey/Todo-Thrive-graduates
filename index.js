@@ -13,10 +13,10 @@ function addTodo(){
      })
     todoInput.value = ''
     console.log(items)
-    rederTodos()
+    renderTodos()
 }
 
-function rederTodos(){
+function renderTodos(){
     const todoList = document.getElementById('todoList')
     todoList.innerHTML = ''
 
@@ -43,10 +43,16 @@ function toggleTodo(id){
         }
         return item
     })
-    rederTodos()
+    renderTodos()
 }
 
 // delete todo
+function deleteTodo(id) {
+    items = items.filter(item => item.id !== id)
+    renderTodos()
+}
 
 addButton.addEventListener('click', addTodo)
 
+const list = [1,2,3,4,5]
+const newList = [...list]
