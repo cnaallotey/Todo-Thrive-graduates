@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+#reset-this-root {
+    all: initial;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    content: border-box;
+}
+
+.nav {
+    display: flex;
+    width: 100vw;
+    border-bottom: 2px solid #c4c4c49f;    
+}
+
+.nav-container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nav-logo-link  {
+    padding: 10px;
+    border-left: 2px solid #c4c4c49f; 
+    border-right: 2px solid #c4c4c49f; 
+    height: auto;
+}
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-menu-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    appearance: none;
+    color: #c4c4c49f !important;
+    cursor: pointer;
+    
+}
+
+.nav-menu-item a {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.nav-menu-icon-search  {
+    padding: 10px 20px;
+    border-left: 2px solid #c4c4c49f; 
+    border-right: 2px solid #c4c4c49f; 
+    height: auto;
+    cursor: pointer;
+    background-color: transparent;
+    height: 64px;
+    appearance: none;
+    border-top: none;
+    border-bottom: none ;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 880px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    gap: 30px;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #000;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.hero-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #727272;
+    margin: 0;
+    max-width: 700px;
+    line-height: 36px;
+}
+
+.hero-button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF7765;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.hero-image {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-left {
+    position: absolute;
+    left: -340px;
+}
+
+
+.hero-right {
+    position: absolute;
+    right: -200px;
+}
